@@ -25,5 +25,8 @@
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^3.0.0",
     "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }

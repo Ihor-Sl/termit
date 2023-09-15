@@ -415,3 +415,94 @@ body.lock {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
+.container {
+  background-color: #111111;
+  width: 100%;
+}
+.container .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  padding: 4.375rem 7.75rem 4.4375rem 0rem;
+  max-width: 1710px;
+  height: 57.25rem;
+  margin: 0 0 0 6rem;
+}
+@media (max-width: 48em) {
+  .container .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* Change to column layout */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the content vertically */
+    margin-top: 20px; /* Add some space between text and image */
+  }
+}
+.container .about .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0 0 50px;
+}
+.container .about .title {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.6875rem; /* 125% */
+  text-transform: uppercase;
+}
+.container .about .main_text {
+  width: 39rem;
+  margin-top: 110px;
+  color: #fff;
+  font-family: IBM Plex Mono;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+.container .about .image_container img {
+  width: 53.625rem;
+  height: 31.875rem; /* Adjust the image size */
+  margin-left: 0; /* Remove left margin */
+}
+@media (max-width: 80em) {
+  .container .about .image_container img {
+    width: 30em;
+    height: auto;
+  }
+}
+
+.gif_container {
+  width: 55%;
+  background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(17, 17, 17, 0.7))), url("img/mosquito_anim_red.gif");
+  background-image: -o-linear-gradient(left, transparent, rgba(17, 17, 17, 0.7)), url("img/mosquito_anim_red.gif");
+  background-image: linear-gradient(to right, transparent, rgba(17, 17, 17, 0.7)), url("img/mosquito_anim_red.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin: 0;
+  position: relative;
+}
+
+.gorizontal_line {
+  position: absolute;
+  top: 235px;
+  left: 60px;
+}
