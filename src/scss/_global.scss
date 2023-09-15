@@ -12,9 +12,8 @@
 //}
 
 body {
-  background-color: black;
   font-family: "Inter", sans-serif;
-
+  background-color: #111;
   &.lock {
     overflow: hidden;
   }

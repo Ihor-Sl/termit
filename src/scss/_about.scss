@@ -1,86 +1,99 @@
-.container {
-    background-color: #111111;
-    width: 100%;
+.about {
+  z-index: 3;
+  background: url('../img/stars.gif');
+  //padding-top: 115px;
 
-    .about {
-        display: flex;
-        flex-direction: row;
-        display: flex;
+  &__container {
+    padding-top: 115px;
+    margin: 0 auto;
+    max-width: 1710px;
+    display: flex;
 
-        padding: 4.375rem 7.75rem 4.4375rem 0rem;
-        max-width: 1710px;
-        height: 57.25rem;
-        margin: 0 0 0 6rem;
-
-        @media (max-width: $breakpoint_md) {
-            flex-direction: column; /* Change to column layout */
-            align-items: center; /* Center the content horizontally */
-            text-align: center; /* Center the content vertically */
-            margin-top: 20px; /* Add some space between text and image */
-        }
-
-        .text {
-            display: flex;
-            flex-direction: column;
-            margin: 50px 0 0 50px;
-        }
-
-        .title {
-            color: #fff;
-            font-family: Roboto;
-            font-size: 3.75rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 4.6875rem; /* 125% */
-            text-transform: uppercase;
-        }
-
-        .main_text {
-            width: 39rem;
-            margin-top: 110px;
-            color: #fff;
-            font-family: IBM Plex Mono;
-            font-size: 1.875rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 2.5rem;
-            text-transform: uppercase;
-        }
-
-        .image_container {
-            img {
-                width: 53.625rem;
-                height: 31.875rem; /* Adjust the image size */
-                margin-left: 0; /* Remove left margin */
-
-                @media (max-width: $breakpoint_xl) {
-                    width: 30em;
-                    height: auto;
-                }
-            }
-        }
+    @media (max-width: $breakpoint_2xl) {
+      padding-top: 0;
     }
-}
 
-.gif_container {
-    width: 55%;
-    background-image: linear-gradient(
-            to right,
-            transparent,
-            rgba(17, 17, 17, 0.7)
-        ),
-        url("img/mosquito_anim_red.gif");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right top;
+    @media (max-width: $breakpoint_xl) {
+      display: block;
+    }
+  }
 
-    margin: 0;
+  &__text {
+    //width: 100%;
+    h2 {
+      margin: 5px 0 0 63px;
+      padding: 0 0 40px 40px;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      border-bottom: 4px solid white;
 
-    position: relative;
-}
+      @media (max-width: $breakpoint_xl) {
+        margin: 0 0 0 63px;
+        padding: 0 0 0 40px;
+      }
 
-.gorizontal_line {
-    position: absolute;
-    top: 235px;
-    left: 60px;
+      @media (max-width: $breakpoint_lg) {
+        margin: 30px;
+        padding: 0;
+      }
+
+      @media (max-width: $breakpoint_sm) {
+        margin: 30px 30px 0 30px;
+        font-size: 30px;
+      }
+    }
+
+    p {
+      margin: 70px 10px 0 100px;
+      color: #FFF;
+      font-family: 'IBM Plex Mono', sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      @media (max-width: $breakpoint_xl) {
+        text-align: justify;
+        margin: 10px 30px 0 100px;
+        font-size: 25px;
+      }
+
+      @media (max-width: $breakpoint_lg) {
+        margin: 0 30px 0 30px;
+        font-size: 20px;
+      }
+
+      @media (max-width: $breakpoint_sm) {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__video {
+    margin: 0 auto;
+    max-width: 850px;
+    max-height: 510px;
+
+    @media (max-width: $breakpoint_xl) {
+      width: auto;
+      height: 400px;
+    }
+
+    @media (max-width: $breakpoint_lg) {
+      width: auto;
+      height: 300px;
+    }
+
+    img {
+      padding-right: 15px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: $breakpoint_xl) {
+        padding: 30px;
+      }
+    }
+  }
 }

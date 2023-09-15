@@ -1,10 +1,9 @@
 .header {
   height: 898px;
   background-image: url("../img/Dots.png"), url("../img/BACKGROUND.png");
-  position: relative;
   background-repeat: repeat, no-repeat;
   background-size: 100vw, cover;
-
+  position: relative;
   @media (max-width: $breakpoint_lg) {
     height: auto;
   }
@@ -15,6 +14,20 @@
     max-width: 1710px;
     justify-content: space-between;
     padding-top: 182px;
+    position: relative;
+    &__line {
+      z-index: 2;
+      position: absolute;
+      top: 102px;
+      left: 56.5px;
+
+      @media (max-width: $breakpoint_lg) {
+        display: none;
+      }
+      @media (max-width: 1700px) {
+        left: 61px;
+      }
+    }
 
     @media (max-width: $breakpoint_lg) {
       display: block;
@@ -30,7 +43,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 100px;
-    margin: 50px 0 0 50px;
+    margin: 50px 0 0 100px;
 
     @media (max-width: $breakpoint_2xl) {
       font-size: 45px;
@@ -247,6 +260,7 @@
     max-width: 1720px;
     padding: 0 20px;
     margin: 0 auto;
+    position: relative;
 
     @media (max-width: $breakpoint_md) {
       height: 80px;
@@ -254,6 +268,7 @@
   }
 
   &__links {
+    font-family: 'IBM Plex Mono', sans-serif;
     overflow: auto;
 
     @media (max-width: $breakpoint_xl) {
@@ -287,7 +302,6 @@
 
       height: 40px;
       line-height: 40px;
-      font-family: 'IBM Plex Mono;', sans-serif;
       font-size: 25px;
       font-weight: 500;
       padding: 0 40px;
