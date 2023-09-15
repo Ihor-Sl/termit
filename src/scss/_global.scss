@@ -1,0 +1,33 @@
+@use 'sass:math';
+
+@function rem($size) {
+  @return math.div($size, 16px) * 1rem;
+}
+
+//.container {
+//    max-width: ($containerWidth) + px;
+//    width: 100%;
+//    margin: 0 auto;
+//    padding: 0 $containerPadding + px;
+//}
+
+body {
+  background-color: black;
+  font-family: "Inter", sans-serif;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+main {
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

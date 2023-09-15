@@ -1,0 +1,329 @@
+.header {
+  height: 898px;
+  background-image: url("../img/Dots.png"), url("../img/BACKGROUND.png");
+  position: relative;
+  background-repeat: repeat, no-repeat;
+  background-size: 100vw, cover;
+
+  @media (max-width: $breakpoint_lg) {
+    height: auto;
+  }
+
+  &__content {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1710px;
+    justify-content: space-between;
+    padding-top: 182px;
+
+    @media (max-width: $breakpoint_lg) {
+      display: block;
+      padding-top: 80px;
+    }
+  }
+
+  &__title {
+    width: 550px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100px;
+    margin: 50px 0 0 50px;
+
+    @media (max-width: $breakpoint_2xl) {
+      font-size: 45px;
+      line-height: 90px;
+    }
+
+    @media (max-width: $breakpoint_lg) {
+      width: auto;
+      margin: 50px;
+      font-size: 40px;
+      line-height: 80px;
+    }
+
+    @media (max-width: $breakpoint_md) {
+      margin: 50px 30px 30px 30px;
+      line-height: 60px;
+      font-size: 30px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+      line-height: 40px;
+      font-size: 20px;
+    }
+  }
+
+  &__buy {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 520px;
+    gap: 40px;
+    background-color: #EA3C3C;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    @media (max-width: $breakpoint_sm) {
+      width: 100%;
+    }
+  }
+
+  &__news {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    //height: 505px;
+
+    @media (max-width: $breakpoint_lg) {
+      //width: 100%;
+      margin: 20px 20px 0 20px;
+      padding-bottom: 50px;
+    }
+
+    svg:first-child {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    svg:last-child {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      @media (max-width: $breakpoint_lg) {
+        bottom: 30px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      background: rgba(17, 17, 17, 0.90);
+      max-width: 698px;
+      height: 155px;
+      padding: 15px;
+      gap: 30px;
+
+      @media (max-width: $breakpoint_lg) {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      @media (max-width: $breakpoint_sm) {
+        height: 120px;
+        padding: 10px;
+      }
+
+      &:hover {
+        background-color: #FFBF25;
+        cursor: pointer;
+      }
+
+      img {
+        object-fit: cover;
+        width: 160px;
+        @media (max-width: $breakpoint_sm) {
+          width: 100px;
+        }
+      }
+
+      &__text {
+        width: 60%;
+        padding: 0 10px 0 0;
+        @media (max-width: $breakpoint_sm) {
+          width: auto;
+        }
+
+        h2 {
+          font-size: 22px;
+          @media (max-width: $breakpoint_sm) {
+            font-size: 16px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: #8B8B8B;
+          @media (max-width: $breakpoint_sm) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  &__gradient {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 225px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #111 85.42%);
+
+    @media (max-width: $breakpoint_lg) {
+      display: none;
+    }
+  }
+}
+
+.nav {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.90);
+
+  &__burger {
+    display: none;
+    width: 60px;
+    height: 36px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+
+    @media (max-width: $breakpoint_xl) {
+      display: block;
+    }
+
+    @media (max-width: $breakpoint_md) {
+      width: 30px;
+      height: 18px;
+    }
+
+    span {
+      transition: all .2s;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #fff;
+
+      @media (max-width: $breakpoint_md) {
+        height: 2px;
+      }
+
+      &:first-child {
+        top: 0;
+      }
+
+      &:last-child {
+        top: auto;
+        bottom: 0;
+      }
+
+    }
+
+    &.active {
+      span {
+        transform: scale(0);
+
+        &:first-child {
+          transform: rotate(-45deg);
+          top: calc(50% - 1px);
+        }
+
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: calc(50% - 1px);
+        }
+      }
+    }
+  }
+
+  &__container {
+    height: 102px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1720px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media (max-width: $breakpoint_md) {
+      height: 80px;
+    }
+  }
+
+  &__links {
+    overflow: auto;
+
+    @media (max-width: $breakpoint_xl) {
+      position: absolute;
+      right: -100%;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      background-color: #ffbf25;
+      display: flex;
+      transition: all .2s;
+      &.active {
+        right: 0;
+      }
+    }
+
+    &__list {
+      display: flex;
+      @media (max-width: $breakpoint_xl) {
+        gap: 20px;
+        margin: auto;
+        flex-direction: column;
+      }
+    }
+
+    a {
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+
+      height: 40px;
+      line-height: 40px;
+      font-family: 'IBM Plex Mono;', sans-serif;
+      font-size: 25px;
+      font-weight: 500;
+      padding: 0 40px;
+      border-right: 1.5px solid #ffffff;
+
+      @media (max-width: $breakpoint_2xl) {
+        font-size: 22px;
+        padding: 0 30px;
+      }
+
+      @media (max-width: $breakpoint_xl) {
+        font-size: 30px;
+        line-height: 70px;
+        border: none;
+      }
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: auto;
+    height: 90px;
+
+    @media (max-width: $breakpoint_md) {
+      height: 70px;
+    }
+
+    @media (max-width: $breakpoint_sm) {
+      height: 50px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+  }
+}
