@@ -1,6 +1,9 @@
 .about {
   z-index: 3;
-  background: url('../img/stars.gif');
+  background-image: url('../img/stars.gif');
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: repeat;
   //padding-top: 115px;
 
   &__container {

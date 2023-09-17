@@ -2,7 +2,6 @@
   background-color: #111111;
   position: relative;
   z-index: 5;
-  height: 500px;
   margin: 100px auto 0 auto;
   @media (max-width: $breakpoint_lg) {
     margin: 50px auto 0 auto;
@@ -52,8 +51,9 @@
 
   &__el-lock {
     margin-top: 15px;
-    border: 3px dashed #858585;
-    background: url('../img/termit6.png') no-repeat 0 0;
+    background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: gray; stroke-width: 4; stroke-dasharray: 50 50'/></svg>"), url('../img/termit6.png');
+    background-repeat: no-repeat, repeat;
+    background-position: 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@
   }
 
   &__wrapper {
-    max-width: 1598px;
+    max-width: 1596px;
     margin: 0 auto;
     border-top: 8px solid white;
     @media (max-width: 1715px) {
@@ -116,7 +116,7 @@
       margin-top: -40px;
       @media (max-width: $breakpoint_sm) {
         font-size: 30px;
-        margin-top: -25px;
+        margin-top: -20px;
       }
     }
   }

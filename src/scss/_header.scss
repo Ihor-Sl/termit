@@ -1,8 +1,6 @@
 .header {
   height: 898px;
-  background-image: url("../img/Dots.png"), url("../img/BACKGROUND.png");
-  background-repeat: repeat, no-repeat;
-  background-size: 100vw, cover;
+  background-image: url("../img/Dots.png");
   position: relative;
   @media (max-width: $breakpoint_lg) {
     height: auto;
@@ -116,6 +114,8 @@
     }
 
     &__item {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
       display: flex;
       align-items: center;
       background: rgba(17, 17, 17, 0.90);
@@ -269,6 +269,7 @@
 
   &__links {
     font-family: 'IBM Plex Mono', sans-serif;
+    font-weight: 500;
     overflow: auto;
 
     @media (max-width: $breakpoint_xl) {

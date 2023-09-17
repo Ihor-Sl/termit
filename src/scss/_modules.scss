@@ -1,0 +1,197 @@
+.modules {
+
+  &__container {
+    font-family: 'Play', sans-serif;
+    max-width: 1596px;
+    margin: 100px auto 0 auto;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    padding: 0 0 100px 0;
+    @media (max-width: 1719px) {
+      border-left: none;
+    }
+
+    @media (max-width: $breakpoint_lg) {
+      padding: 0;
+    }
+
+    h2 {
+      margin: -40px 0 0 40%;
+      background-color: #111111;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      @media (max-width: $breakpoint_md) {
+        margin: -25px 0 0 40%;
+        font-size: 40px;
+      }
+      @media (max-width: $breakpoint_sm) {
+        margin: -20px 0 0 40%;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__grid {
+
+    margin: 50px 10px 0 50px;
+    display: flex;
+    gap: 40px;
+    padding-bottom: 50px;
+    @media (max-width: $breakpoint_xl) {
+      flex-wrap: wrap;
+      gap: 0;
+      margin: 10px;
+    }
+    @media (max-width: 1719px) {
+      margin: 50px 10px 0 10px;
+    }
+
+    position: relative;
+    &__feature {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      color: #FFBF25;
+      text-align: center;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 400;
+      @media (max-width: $breakpoint_xl) {
+        position: static;
+      }
+      @media (max-width: $breakpoint_md) {
+        font-size: 20px;
+      }
+    }
+
+    &__items {
+      @media (max-width: $breakpoint_xl) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+      }
+      &:first-child {
+        @media (max-width: $breakpoint_xl) {
+          order: 2;
+        }
+      }
+      &:last-child {
+        @media (max-width: $breakpoint_xl) {
+          order: 3;
+        }
+      }
+    }
+
+    &__item {
+      color: #111111;
+      font-weight: 400;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 315px;
+      height: 100px;
+      border: 2px solid #111;
+      background: #FFBF25;
+      margin-top: 10px;
+      cursor: pointer;
+      &.active {
+        background-color: #EA3C3C;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+      @media (max-width: $breakpoint_xl) {
+        margin: 0;
+        width: 33%;
+      }
+      @media (max-width: $breakpoint_md) {
+        font-size: 25px;
+      }
+      @media (max-width: $breakpoint_sm) {
+        font-size: 20px;
+      }
+    }
+
+    &__display {
+      overflow: hidden;
+      padding: 40px;
+      width: 870px;
+      height: 650px;
+      background-image: url("data:image/svg+xml;utf8,<svg width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill: none; stroke: gold; stroke-width: 4; stroke-dasharray: 50 50'/></svg>");
+      @media (max-width: $breakpoint_xl) {
+        height: 400px;
+        order: 1;
+        width: 100%;
+      }
+
+      &__item {
+        height: 0;
+        width: 100%;
+        position: relative;
+        transition: all .4s;
+        opacity: 0;
+
+        &.active {
+          height: 100%;
+          display: block;
+          opacity: 1;
+        }
+
+        a {
+          position: absolute;
+          z-index: 2;
+          bottom: 0;
+          right: 0;
+          display: flex;
+          width: 250px;
+          padding: 10px;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #ffbf25;
+          @media (max-width: $breakpoint_sm) {
+            font-size: 20px;
+          }
+
+          span {
+            color: black;
+            font-weight: 700;
+            font-size: 20px;
+          }
+        }
+
+        img {
+          z-index: 1;
+          position: absolute;
+          top: -40px;
+          right: -40px;
+        }
+
+        &__text {
+          h3 {
+            position: relative;
+            z-index: 2;
+            color: #EA3C3C;
+            font-size: 60px;
+            font-weight: 700;
+          }
+
+          p {
+            position: relative;
+            z-index: 2;
+            color: #FFF;
+            font-size: 40px;
+
+            &:last-child {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

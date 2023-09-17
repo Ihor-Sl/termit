@@ -4,25 +4,20 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <link rel="stylesheet" href="css/style.min.css"/>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Hanken+Grotesk:ital,wght@0,500;0,700;0,800;1,500;1,700&family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ledger&family=Open+Sans:wght@300&family=Outfit:wght@100;300;400;500;600;700;800;900&family=Poppins:wght@100;200&display=swap"
-          rel="stylesheet"/>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"/>
-
     <script defer src="js/script.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Play:wght@400;700&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
     <title>Termit</title>
 </head>
-
 <body>
 <header class="header">
     <nav class="nav">
@@ -37,18 +32,20 @@
             </div>
             <div class="nav__links">
                 <div class="nav__links__list">
-                    <a href="">ПРО НАС</a>
-                    <a href="">ПЛАТФОРМИ</a>
-                    <a href="">МОДУЛІ</a>
-                    <a href="">ЗБОРИ</a>
-                    <a href="">ПРОГРЕС</a>
+                    <a href="#about">ПРО НАС</a>
+                    <a href="#platforms">ПЛАТФОРМИ</a>
+                    <a href="#modules">МОДУЛІ</a>
+                    <a href="#zbory">ЗБОРИ</a>
+                    <a href="#progress">ПРОГРЕС</a>
                 </div>
             </div>
         </div>
     </nav>
     <div class="header__content">
-        <svg class="header__content__line" width="8" height="1672" viewBox="0 0 8 1672" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 1672L4.00004 92.2337M4.00004 82.2324L4.00004 51.6731M4.00003 41.6718L4.00007 25.5588M4 5.00068L4 -2.61068e-05M4 18.8913L4 10.0013" stroke="white" stroke-width="8"/>
+        <svg class="header__content__line" width="8" height="1672" viewBox="0 0 8 1672" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 1672L4.00004 92.2337M4.00004 82.2324L4.00004 51.6731M4.00003 41.6718L4.00007 25.5588M4 5.00068L4 -2.61068e-05M4 18.8913L4 10.0013"
+                  stroke="white" stroke-width="8"/>
         </svg>
 
         <div class="header__title">
@@ -93,23 +90,26 @@
             </svg>
         </div>
     </div>
-    <!--    <video autoplay loop muted playsinline class="header__video">-->
-    <!--        <source src="img/header-video.gif">-->
-    <!--    </video>-->
+    <video autoplay loop muted playsinline
+           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="./img/header_video.mp4">
+    </video>
     <div class="header__gradient"></div>
 </header>
-<section class="about">
+<section class="about" id="about">
     <div class="about__container">
         <div class="about__text">
             <h2>/ХТО МИ?</h2>
-            <p>З НАМИ ІННОВАЦІЇ БЕРУТЬ ПОЧАТОК. МИ СПЕЦІАЛІЗУЄМОСЯ НА РОЗРОБЦІ ТА ВИРОБНИЦТВІ ПЕРЕДОВИХ БЕЗПІЛОТНИХ АПАРАТІВ, ЯКІ СЛУЖАТЬ ПОДВІЙНІЙ МЕТІ – ЗМІЦНЕННЮ НАЦІОНАЛЬНОЇ ОБОРОНИ ТА РОЗШИРЕННЮ МОЖЛИВОСТЕЙ ГАЛУЗЕЙ ЦИВІЛЬНОГО СПЕКТРУ.</p>
+            <p>З НАМИ ІННОВАЦІЇ БЕРУТЬ ПОЧАТОК. МИ СПЕЦІАЛІЗУЄМОСЯ НА РОЗРОБЦІ ТА ВИРОБНИЦТВІ ПЕРЕДОВИХ БЕЗПІЛОТНИХ
+                АПАРАТІВ, ЯКІ СЛУЖАТЬ ПОДВІЙНІЙ МЕТІ – ЗМІЦНЕННЮ НАЦІОНАЛЬНОЇ ОБОРОНИ ТА РОЗШИРЕННЮ МОЖЛИВОСТЕЙ ГАЛУЗЕЙ
+                ЦИВІЛЬНОГО СПЕКТРУ.</p>
         </div>
         <div class="about__video">
             <img src="img/vidos.png" alt="">
         </div>
     </div>
 </section>
-<section class="platforms">
+<section class="platforms" id="platforms">
     <div class="platforms__wrapper">
         <div class="platforms__title">
             <h2>/ПЛАТФОРМИ</h2>
@@ -118,23 +118,425 @@
             <h3>TERMIT-4</h3>
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
-                    <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4" stroke-linecap="square"/>
+                    <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                          stroke-linecap="square"/>
                 </svg>
                 <span>ПЕРЕГЛЯНУТИ</span>
             </a>
         </div>
         <div class="platforms__el-lock">
             <h3>TERMIT-6</h3>
-            <img src="../img/zamok.png">
+            <img src="./img/zamok.png">
             <h3>У РОЗРОБЦІ</h3>
         </div>
         <div class="platforms__el-lock">
             <h3>TERMIT-6</h3>
-            <img src="../img/zamok.png">
+            <img src="./img/zamok.png">
             <h3>У РОЗРОБЦІ</h3>
         </div>
     </div>
 </section>
-</body>
+<section class="modules" id="modules">
+    <div class="modules__container">
+        <h2>/МОДУЛІ</h2>
+        <div class="modules__grid">
+            <div class="modules__grid__items">
+                <div id="COMAR" class="modules__grid__item active">/ КОМАР</div>
+                <div id="CIKADA" class="modules__grid__item">/ ЦИКАДА</div>
+                <div id="SCORPION" class="modules__grid__item">/ СКОРПІОН</div>
+                <div id="SKARABEY" class="modules__grid__item">/ СКАРАБЕЙ</div>
+                <div id="ROGACH" class="modules__grid__item">/ РОГАЧ</div>
+                <div id="TARANTUL" class="modules__grid__item">/ ТАРАНТУЛ</div>
+            </div>
+            <div class="modules__grid__display">
+                <div id="COMAR-D" class="modules__grid__display__item active">
+                    <div class="modules__grid__display__item__text">
+                        <h3>КОМАР</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="CIKADA-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>ЦИКАДА</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="SCORPION-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>СКОРПІОН</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="SKARABEY-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>СКАРАБЕЙ</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="ROGACH-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>РОГАЧ</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="TARANTUL-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>ТАРАНТУЛ</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="MUHA-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>МУХА</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="SARANA-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>САРАНА</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="OSA-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>ОСА</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="XRUH-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>ХРУЩ</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="CVIRKUN-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>ЦВІРКУН</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+                <div id="SVITLAK-D" class="modules__grid__display__item">
+                    <div class="modules__grid__display__item__text">
+                        <h3>СВІТЛЯК</h3>
+                        <p>Терміт-4</p>
+                        <p>Мінер</p>
+                    </div>
+                    <img src="img/modules_img.png" alt="">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                            <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                  stroke-linecap="square"/>
+                        </svg>
+                        <span>ПЕРЕГЛЯНУТИ</span>
+                    </a>
+                </div>
+            </div>
+            <p class="modules__grid__feature">Кожен тип має свої особливості та функції</p>
+            <div class="modules__grid__items">
+                <div id="MUHA" class="modules__grid__item">/ МУХА</div>
+                <div id="SARANA" class="modules__grid__item">/ САРАНА</div>
+                <div id="OSA" class="modules__grid__item">/ ОСА</div>
+                <div id="XRUH" class="modules__grid__item">/ ХРУЩ</div>
+                <div id="CVIRKUN" class="modules__grid__item">/ ЦВІРКУН</div>
+                <div id="SVITLAK" class="modules__grid__item">/ СВІТЛЯК</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="zbory" id="zbory">
+    <div class="zbory__container">
+        <h2>/ЗБОРИ</h2>
+        <div class="splide">
+            <div class="splide__track" style="margin: 0 20px">
+                <div class="zbory__list splide__list">
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                    <div class="zbory__item splide__slide">
+                        <h3>ЗАГАЛОМ</h3>
+                        <p>Опис збору, що, нащо, для кого і як. Якийсь текст, щоб людям було зрозуміло, що нада донатити
+                            вже і то бігом.</p>
+                        <img src="./img/dronecar.gif" class="zbory__item__fon" alt=""/>
+                        <img src="./img/zborydron.png" class="zbory__item__drone" alt=""/>
+                        <div class="zbory__item__gradient"></div>
+                        <div class="zbory__item__progress-bar"><span>90%</span></div>
+                        <div class="zbory__item__money"><span>9 087 152 $</span><span>/ 10 000 000 $</span></div>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35"
+                                 fill="none">
+                                <path d="M2.99988 32L33 2M33 2V32M33 2H3.00002" stroke="#111111" stroke-width="4"
+                                      stroke-linecap="square"/>
+                            </svg>
+                            <span>ПІДТРИМАТИ ПРОЕКТ</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="progress" id="progress">
+    <div class="progress__container">
+        <h2>/ПРОГРЕС</h2>
+        <div class="progress__list">
+            <div class="progress__item">
+                <h3 class="progress__item__value">4,21<span>МЛН <br> ГРН</span></h3>
+                <h4 class="progress__item__title">ЗІБРАНІ <br> КОШТИ</h4>
+            </div>
+            <div class="progress__item">
+                <h3 class="progress__item__value">12 024</h3>
+                <h4 class="progress__item__title">ЛЮДЕЙ ПІДТРИМАЛО <br> ПРОЕКТ</h4>
+            </div>
+            <div class="progress__item">
+                <h3 class="progress__item__value">34</h3>
+                <h4 class="progress__item__title">МОДУЛІВ ПЕРЕДАНО <br> В РОБОТУ</h4>
+            </div>
+            <div class="progress__item">
+                <h3 class="progress__item__value">12</h3>
+                <h4 class="progress__item__title">МОДУЛІВ У ПРОЦЕСІ <br> ВИРОБНИЦТВА</h4>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__images">
+            <img src="./img/nazovni.png" class="footer__nazovni" alt=""/>
+            <img src="./img/TERMIT-LOGO-WHITE-TRANSPARENT-7%201.png" class="footer__logo" alt=""/>
+        </div>
+        <div class="footer__info">
+            <div class="footer__info__container">
 
+                <div class="footer__info__contacts">
+                    <h3>Контакти</h3>
+                    <div class="footer__info__contacts__phone">
+                        <img src="./img/free-icon-telephone-159832%201.png" alt="">
+                        <span>+38 098 76 58 765</span>
+                    </div>
+                    <div class="footer__info__contacts__email">
+                        <img src="./img/free-icon-envelope-481659%201.png" alt="">
+                        <span>termit@info.com</span>
+                    </div>
+                </div>
+                <div class="footer__info__adress">
+                    <h3>Адреса</h3>
+                    <div>
+                        <img src="./img/free-icon-location-2776074%201.png" alt="">
+                        <span>вул. Хрещатик, 38 <br> м. Київ, <br> 01001</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__info__socialmedia">
+                <a href=""><img src="./img/free-icon-twitter-4401454%201.png" alt=""></a>
+                <a href=""><img src="./img/free-icon-facebook-3670271%201.png" alt=""></a>
+                <a href=""><img src="./img/free-icon-instagram-1384015%20(1)%201.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
 </html>

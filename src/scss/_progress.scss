@@ -1,0 +1,97 @@
+.progress {
+
+  font-family: 'IBM Plex Mono', sans-serif;
+  margin-bottom: 50px;
+  &__container {
+    background: url("../img/dronecar.gif") no-repeat center;
+    background-size: 629px 528px;
+    max-width: 1596px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    height: 650px;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    border-bottom: 8px solid white;
+    position: relative;
+
+    @media (max-width: $breakpoint_lg) {
+      height: auto;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(17, 17, 17, 0.7);
+      z-index: 2;
+    }
+
+    h2 {
+      position: relative;
+      z-index: 3;
+      margin: -40px 0 0 40%;
+      background-color: #111111;
+      color: #FFF;
+      font-family: 'Roboto', sans-serif;
+      font-size: 60px;
+      font-weight: 700;
+      @media (max-width: $breakpoint_md) {
+        margin: -25px 0 0 40%;
+        font-size: 40px;
+      }
+      @media (max-width: $breakpoint_sm) {
+        margin: -20px 0 0 40%;
+        font-size: 30px;
+      }
+    }
+  }
+
+  &__item {
+    position: relative;
+    z-index: 3;
+    &__value {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        font-size: 35px;
+        color: #ffbf25;
+        margin-left: 5px;
+        @media (max-width: $breakpoint_lg) {
+          font-size: 18px;
+        }
+      }
+
+      color: #FFBF25;
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @media (max-width: $breakpoint_lg) {
+        font-size: 50px;
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
